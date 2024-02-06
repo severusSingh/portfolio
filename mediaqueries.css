@@ -1,7 +1,13 @@
 @media screen and (max-width: 1400px) {
+  #desktop-nav{
+    height: 25vh;
+  }
   #profile {
-    height: 83vh;
+    height: 60vh;
     margin-bottom: 6rem;
+  }
+  #about{
+    height: 63vh;
   }
   .about-containers {
     flex-wrap: wrap;
@@ -10,12 +16,24 @@
   #projects {
     height: fit-content;
   }
+  .timeline-section {
+    min-height: 90vh;
+    margin-bottom: 20px;
+}.skill-container{
+  min-height: 65vh;
+}
 }
 
 @media screen and (max-width: 1200px) {
   #desktop-nav {
     display: none;
   }
+
+  .row .col{
+    flex-basis: 43%;
+   /* margin: 0 3rem */
+  }
+
   #hamburger-nav {
     display: flex;
   }
@@ -23,9 +41,17 @@
   .experience-details-container {
     margin-top: 2rem;
   }
+  #Skils,
+  .experience-details-container {
+    margin-top: 2rem;
+  }
   #profile,
   .section-container {
     display: block;
+    height: auto;
+  }
+  #about{
+    height: 90vh;
   }
   .arrow {
     display: none;
@@ -38,13 +64,92 @@
     margin: 0 5%;
   }
   .section__pic-container {
-    width: 275px;
-    height: 275px;
+    width: 400px;
+    height: 400px;
     margin: 0 auto 2rem;
   }
   .about-containers {
     margin-top: 0;
   }
+  .about-details-container {
+    padding-top: 0;
+  }.section__text {
+    margin-top: 0;
+  }.skill-container{
+    min-height: 70vh;
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width:1050px){
+#about{
+  height: auto;
+}#experience{
+  min-height: 67vh;
+}#profile{
+  height: auto;
+}.skill-container{
+  min-height: 47vh;
+  margin-bottom: 4rem
+}
+}
+@media (max-width:1000px){
+  .timeline-section{
+    min-height: 80vh;
+  }.skill-container{
+    min-height: 45vh;
+  }#about{
+    height: 60vh;
+  }#experience{
+    min-height: 65vh;
+}
+}
+@media(max-width:800px){
+
+#profile{
+  height: auto;
+}  
+#about{
+  height: auto;
+}.skill-container{
+  min-height: 55vh;
+}
+}
+
+
+@media(max-width:767px){
+  .timeline-section{
+    min-height: 80vh;
+  }
+  .timeline-items::before{
+    left: 7px;
+  }
+
+  .timeline-item:nth-child(odd){
+    padding-right: 0;
+    text-align: left;
+  }
+
+  .timeline-item:nth-child(odd),.timeline-item:nth-child(even){
+    padding-left: 37px;
+  }
+
+  .timeline-dot{
+    left: 0;
+  }
+  .carousel-caption h5 {
+    font-size: 30px;
+    font-weight: 700;
+}
+.carousel-caption p {
+  font-size: 10px;
+  top: 2rem;
+  color: #ffff;
+}
+.slider-btn .btn {
+  font-size: 1rem;
+  padding: 0.5rem;
+}
 }
 
 @media screen and (max-width: 600px) {
@@ -53,8 +158,10 @@
     height: 40vh;
   }
   #profile {
-    height: 83vh;
+    height: 100vh;
     margin-bottom: 0;
+  }#about{
+    height: 90vh;
   }
   article {
     font-size: 1rem;
@@ -67,9 +174,10 @@
   .contact-info-upper-container,
   .btn-container {
     flex-wrap: wrap;
+    margin-top: 3rem;
   }
   .contact-info-container {
-    margin: 0;
+    margin: 5px;
   }
   .contact-info-container p,
   .nav-links li a {
@@ -88,8 +196,12 @@
   }
   .section__pic-container {
     width: auto;
-    height: 46vw;
+    height: 55vw;
     justify-content: center;
+    margin-top: 50px;
+  }
+  .section__pic-container img{
+    border-radius: 50%;
   }
   .section__text__p2 {
     font-size: 1.25rem;
@@ -100,4 +212,83 @@
   .text-container {
     text-align: justify;
   }
+  .skill-container{
+    min-height: 83vh;
+    margin-bottom: 0;
+  }
+}
+
+@media(max-width: 568px){
+	.skill-container .row{
+		flex-direction: column;
+	}
+	.skill-container .main-title h1{
+		font-size: 36px;
+	}
+	.skill-container .row{
+		margin-top: 30px;
+	}
+	.row .col:nth-child(2){
+		margin-top: 20px;
+	}
+}
+
+@media screen and (max-width: 400px) {
+  #profile {
+    height: 100vh;
+    margin-bottom: 0;
+}
+#about{
+  height: 100vh;
+}
+}
+
+@media screen and (max-width: 450px) {
+  #profile {
+    height: 80vh;
+    margin-bottom: 5rem;
+}
+#about{
+  height: 83vh;
+  margin-bottom: 5rem;
+}
+.slider-btn .btn {
+  font-size: 0.5rem;
+  padding: 0.5rem;
+}
+.carousel-caption h5 {
+  font-size: 20px;
+  font-weight: 700;
+}
+.carousel-caption p {
+font-size: 8px;
+top: 2rem;
+color: #ffff;
+}
+}
+
+@media screen and (max-width: 380px) {
+  #profile {
+    height: 90vh;
+    margin-bottom: 0;
+}#about{
+  height: 100vh;
+}.skill-container{
+  height: 100vh;
+  margin-bottom: 4rem;
+}
+.carousel-caption h5 {
+  font-size: 10px;
+  font-weight: 700;
+}
+.carousel-caption p {
+font-size: 5px;
+top: 2rem;
+color: #ffff;
+}
+.slider-btn .btn {
+font-size: 10px;
+/* padding: 0.5rem; */
+border-radius: 15%;
+}
 }
