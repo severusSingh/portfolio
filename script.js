@@ -16,10 +16,26 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
-  // Specify the elements you want to observe and animate
+
   const animatedElements = document.querySelectorAll('.animated');
 
   animatedElements.forEach(element => {
     observer.observe(element);
   });
 });
+
+
+document.getElementById("netflix-clone-icon").addEventListener("click", function() {
+  
+    window.open("https://severussingh.github.io/netflix-clone/", "_blank");
+  });
+
+  document.getElementById("Movie-Finder-icon").addEventListener("click", function() {
+  
+    window.open("https://severussingh.github.io/Movie-Finder/", "_blank");
+  });
+
+  document.getElementById("coffee-shop-icon").addEventListener("click", function() {
+  
+    window.open("https://severussingh.github.io/coffee.github.io/", "_blank");
+  });
